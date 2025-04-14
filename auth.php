@@ -8,7 +8,7 @@ if (!isset($data["username"]) || !isset($data["password"])) {
     exit;
 }
 
-$username = $data["username"];
+$username = $data["name"];
 $password = $data["password"];
 
 $stmt = $pdo->prepare("SELECT * FROM users WHERE username = ?");
