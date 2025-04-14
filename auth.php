@@ -3,7 +3,7 @@
 require 'db.php';
 $data = json_decode(file_get_contents("php://input"), true);
 
-if (!isset($data["username"]) || !isset($data["password"])) {
+if (!isset($data["name"]) || !isset($data["password"])) {
     echo json_encode(["success" => false, "message" => "Missing credentials"]);
     exit;
 }
